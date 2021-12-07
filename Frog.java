@@ -6,7 +6,15 @@ public class Frog {
 	private int age;
 	private double tongueSpeed;
 	private boolean isFroglet;
-	protected String species = "Rare Pepe"; 
+	private static String species = "Rare Pepe"; 
+	
+	Frog(String newName){
+		name = newName;
+		age = 5;
+		tongueSpeed = 5;
+		isFroglet = (age >=1 && age <7);
+		
+	}
 	
 	Frog(String newName, int newAge, double newTongueSpeed){
 		name = newName;
@@ -22,18 +30,7 @@ public class Frog {
 		isFroglet = (age >=1 && age <7);
 	}
 	
-	Frog(String newName){
-		name = newName;
-		age = 5;
-		tongueSpeed = 5;
-		isFroglet = (age >=1 && age <7);
-		
-	}
-	
-//	Frog(){
-//		age = 5;
-//		tongueSpeed = 5;
-//	}
+
 	
 	public void grow(int numMonths) {
 		
